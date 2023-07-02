@@ -19,5 +19,18 @@ console.log(addToCollection('Rappa Ternt Sanga' , 'T-Pain' , 2005));
 console.log(addToCollection('Ctrl' , 'SZA' , 2017));
 console.log(addToCollection('Cupid Deluxe' , 'Blood Orange' , 2013));
 
+console.log(collection);
 
+function showCollection([]){
+  let contentDiv = document.querySelector('#content');
+  contentDiv.innerHTML = [];
+  for(let [] of collectionsToDisplay){
+    contentDiv.innerHTML =+`
+      <div>
+        <h3> ${title} by ${artist} published in ${yearPublished} </h3>
+      </div>
+    `;
+  }
+}
+showCollection(collection);
 
