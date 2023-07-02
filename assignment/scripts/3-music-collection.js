@@ -23,8 +23,8 @@ console.log(collection);
 
 function showCollection([]){
   let contentDiv = document.querySelector('#content');
-  contentDiv.innerHTML = [];
-  for(let [] of collectionsToDisplay){
+  contentDiv.innerHTML = '';
+  for(let collections of collectionsToDisplay){
     contentDiv.innerHTML =+`
       <div>
         <h3> ${title} by ${artist} published in ${yearPublished} </h3>
