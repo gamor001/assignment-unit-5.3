@@ -21,16 +21,14 @@ console.log(addToCollection('Cupid Deluxe' , 'Blood Orange' , 2013));
 
 console.log(collection);
 
-function showCollection([]){
+function showCollection(){
   let contentDiv = document.querySelector('#content');
   contentDiv.innerHTML = '';
-  for(let collections of collectionsToDisplay){
-    contentDiv.innerHTML =+`
-      <div>
-        <h3> ${title} by ${artist} published in ${yearPublished} </h3>
-      </div>
+  for(let music of collection){
+    contentDiv.innerHTML +=`
+        <h3> ${music.title} by ${music.artist} published in ${music.yearPublished} </h3>
     `;
   }
 }
-showCollection(collection);
+showCollection();
 
